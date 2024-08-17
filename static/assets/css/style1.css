@@ -1,0 +1,53 @@
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ANIMATION */
+
+/* CUSTOMIZATION */
+:root {
+    /* Color */
+    --clr-darkestI: #000;
+    --clr-darkest: #000249;
+    --clr-darker: #484a94;
+    --clr-dark: #004aad;
+    --clr-lightdarker: #737373;
+    --clr-lightdark: #a6a6a6;
+    --clr-lighter: #effbff;
+    --clr-light: #fff;
+
+    /* Font Family */
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Raleway', monospace;
+
+    /* Font Weight */
+    --fw-reg: 300;
+    --fw-med: 600;
+    --fw-bold: 900;
+
+    /* Font Size */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    /* Box Shadow */
+    --bs: .25em .25em .75em rgba(0,0,0,.25),
+          .125em .125em .25em rgba(0,0,0,.15);
+}
+
+/* GENERAL */
+a{
+    text-decoration: none;
+}
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    background: var(--clr-darkest);
+    font: var(--ff-primary);
+}
+.header {
+    height: 10rem;
+    background: var(--clr-light);
+}

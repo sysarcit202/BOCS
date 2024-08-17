@@ -1,0 +1,217 @@
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ANIMATION */
+
+/* CUSTOMIZATION */
+:root {
+    /* Color */
+    --clr-darkestI: #000;
+    --clr-darkest: #000249;
+    --clr-darker: #484a94;
+    --clr-dark: #004aad;
+    --clr-lightdarker: #737373;
+    --clr-lightdark: #a6a6a6;
+    --clr-lighter: #effbff;
+    --clr-light: #fff;
+
+    /* Font Family */
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Raleway', monospace;
+
+    /* Font Weight */
+    --fw-reg: 300;
+    --fw-med: 600;
+    --fw-bold: 900;
+
+    /* Font Size */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    /* Box Shadow */
+    --bs: .25em .25em .75em rgba(0,0,0,.25),
+          .125em .125em .25em rgba(0,0,0,.15);
+}
+@media (max-width: 800px) {
+    :root {
+        /* Font Size */
+        --fs-h1: 2rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1rem;
+        --fs-body: .8rem;
+    }
+}
+
+/* GENERAL */
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    background: var(--clr-darkest);
+    font: var(--ff-primary);
+}
+
+.header {
+    height: 10rem;
+    padding: 2.5rem;
+    background: var(--clr-light);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.img_nch {
+    position: relative;
+    padding: 5px 2px;
+    height: 7rem;
+    
+}
+
+.img_bocs {
+    position: relative;
+    padding: 5px 2px;
+    height: 10rem;
+    align-items: left;
+}
+
+.typog1 {
+    align-items: 0 auto !important;
+}
+
+.typog1 > p{
+    letter-spacing: 5px;
+    font-weight: var(--fw-reg);
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.5;
+}
+
+.typog1 > h1{
+    letter-spacing: 10px;
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-primary);
+    margin-top: 0;
+}
+@media (max-width: 800px) {
+    .header {
+        height: 6rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_nch {
+        padding: 5px 2px;
+        height: 5rem;
+    }
+
+    .img_bocs {
+        padding: 5px 2px;
+        height: 8rem
+    }
+
+    .typog1 > p{
+        letter-spacing: 3px;
+        font-weight: var(--fw-reg);;
+        margin-bottom: 0.5;
+    }
+
+    .typog1 > h1{
+        letter-spacing: 8px;
+        font-weight: var(--fw-bold);
+        margin-top: 0;
+    }
+}
+
+.main {
+    display: grid;
+    height: fit-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas: "form1" "greeting";
+    grid-template-columns: min-content max-content;
+    justify-content: space-evenly;
+    align-self: baseline;
+}
+
+input[type=text] {
+    width: 25rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-weight: var(--fw-med);
+    border: 1px solid var(--clr-lighter);
+    border-radius: 4px;
+    transition: all 1s;
+}
+  
+input[type=submit] {
+    width: 25rem;
+    background-color: #4CAF50;
+    color: var(--clr-darkestI);
+    font-weight: var(--fw-med);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s;
+}
+/* input[type=submit]~.codered{
+    background-color: #ff0000;
+} */
+  
+input[type=submit]:hover {
+    background-color: #3b813d;
+}
+/* input[type=submit]~.codered:hover {
+    background-color: #c20101;
+} */
+a.codered {
+    text-decoration: none;
+    color: var(--clr-light);
+    position: relative;
+    top: -10px;
+    transition: all .5s;
+}
+a.codered:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.form1 {
+    align-content: center;
+    text-align: end;
+}
+.greeting {
+    color: var(--clr-light);
+    padding: 0 auto;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+}
+.typog2 {
+    position: relative;
+    bottom: -50px;
+}
+.typog2 > h1 {
+    margin-bottom: 0;
+    font-size: 100px;
+}
+.typog2 > h5 {
+    margin: 0;
+}
+.img_bocsinvrt{
+    position: relative;
+    height: 25rem;
+    top: -80px;
+}
