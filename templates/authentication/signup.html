@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | BOCS</title>
+    
+    <!-- REFERENCES -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'assets/img/BOCS Logo.png' %}">
+    <link rel="apple-touch-icon" type="image/png" href="{% static 'assets/img/BOCS Logo.png' %}">
+</head>
+<body>
+    <form action="/signup" method="POST">
+    {% csrf_token %}
+        <input type="text" id="Ufname" name="Ufname" placeholder="First Name" Required><br>
+        <input type="text" id="Ulname" name="Ulname" placeholder="Last Name" Required><br>
+        <input type="text" id="Uemail" name="Uemail" placeholder="Email Address" Required><br>
+        <input type="text" id="Ujrole" name="Ujrole" placeholder="Job Role" Required><br>
+        <input type="text" id="Uidnum" name="Uidnum" placeholder="ID Number" Required><br>
+        <input type="text" id="Uname" name="Uname" placeholder="Username" Required><br>        
+        <input type="password" id="Upass" name="Upass" placeholder="New Password" Required><br>
+        <input type="password" id="Urpass" name="Urpass" placeholder="Confirm Password" Required><br>
+        <input type="submit" value="CREATE ACCOUNT"><br>
+    </form>
+</body>
+</html>

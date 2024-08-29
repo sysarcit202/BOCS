@@ -30,13 +30,15 @@
     </header>
     <div class="main">
         <section class="form1">
-            <form action="">
-                <input type="text" id="uname email" placeholder="Username/Email" Required><br>
-                <input type="text" id="password" placeholder="Password" Required><br><br>
+            <form action="/dashboard">
+            {% csrf_token %}
+                <input type="text" id="username" placeholder="Username/Email" required><br>
+                <input type="text" id="password" placeholder="Password" required><br><br>
                 <a href="" class="codered">Forgot Password?</a>
-                <input type="submit" value="LOG IN"><br>
+                <input type="submit" id="dashboard" value="LOG IN"><br>
                 <!-- <input type="submit" value="FORGOT PASSWORD?" class="codered"><br> -->
-                <input type="submit" value="CREATE ACCOUNT">
+                <!-- <input type="button" id="signup" value="CREATE ACCOUNT"> -->
+                <button type="submit" id="signup">CREATE ACCOUNT</button>
             </form>
         </section>
         <section class="greeting">
