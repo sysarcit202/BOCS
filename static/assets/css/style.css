@@ -179,7 +179,7 @@ input[type=button]:hover {
 /* input[type=submit]~.codered:hover {
     background-color: #c20101;
 } */
-button[type=submit] {
+/* button[type=submit] {
     width: 25rem;
     background-color: #4CAF50;
     color: var(--clr-darkestI);
@@ -193,7 +193,7 @@ button[type=submit] {
 }
 button[type=submit]:hover {
     background-color: #3b813d;
-}
+} */
 a.codered {
     text-decoration: none;
     color: var(--clr-light);
